@@ -1,0 +1,4613 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{/home/alf/cloud/lib/lyx/my_preamble}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\listings_params "keywordstyle={\color{keyword_color}\ttfamily\bfseries},commentstyle={\color{comentarios_color}\itshape},emphstyle={\color{red}},breaklines=true,basicstyle={\ttfamily},stringstyle={\color{cadenas_color}},identifierstyle={\color{identifier_color}},backgroundcolor={\color{fondocodigo_color}},keepspaces=true,numbers=left,xleftmargin=2em,frame=leftline,rulecolor={\color{black}},numbersep=5pt,tabsize=3"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "~/cloud/lib/lyx/macros2020.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\COVARIANTINDEX}[1]{\hspace{0cm}{}_{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\CONTRAVARIANTINDEX}[1]{\hspace{0cm}{}^{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sun}{\odot}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\TACHADO}[1]{\underline{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\SNR}{\text{SNR}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+PHY529 Advanced Topics in General Relativity and Gravitational Waves - Lecture
+ Notes
+\end_layout
+
+\begin_layout Author
+Matías Senger
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Course website: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.physik.uzh.ch/en/teaching/PHY529/HS2021.html
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+Peter R.
+ Saulson, Gravitational wave detection: Principles and practice, Comptes
+ Rendus Physique, 2013, 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://doi.org/10.1016/j.crhy.2013.01.007
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+Gravitational-Wave Physics and Astronomy, Jolien D.E.
+ Creighton and W.
+ C.
+ Anderson.
+\end_layout
+
+\begin_layout Section*
+2021-Sept-23
+\end_layout
+
+\begin_layout Standard
+Read this for next week 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.sciencedirect.com/science/article/pii/S163107051300008X
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Nice summary of gravitational waves: Gravitational-Wave Physics and Astronomy,
+ Jolien D.E.
+ Creighton and W.
+ C.
+ Anderson.
+\end_layout
+
+\begin_layout Section
+Summary of the paper 
+\begin_inset Quotes eld
+\end_inset
+
+Gravitational wave detection: Principles and practice
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here I am summarizing the paper we had to read, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+What is a gravitational wave
+\end_layout
+
+\begin_layout Standard
+A gravitational wave is a solution to Einstein's equation in the weak field
+ limit
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Do we need the weak field limit? In this limit the waves are harmonic, are
+ there 
+\begin_inset Quotes eld
+\end_inset
+
+non-linear waves
+\begin_inset Quotes erd
+\end_inset
+
+ in the full theory?
+\end_layout
+
+\end_inset
+
+.
+ Gravitational waves are 
+\series bold
+transverse traceless waves traveling at the speed of light
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Transverse: We all know what it means, the same as an electromagnetic field.
+ The perturbation that the wave produces is transverse with its direction
+ of propagation.
+\end_layout
+
+\begin_layout Itemize
+Traceless: The waves have equal and opposite effects in two perpendicular
+ directions.
+\end_layout
+
+\begin_layout Standard
+A wave traveling in the 
+\begin_inset Formula $\VERSOR z$
+\end_inset
+
+ direction produces relative motion in the 
+\begin_inset Formula $\VERSOR x$
+\end_inset
+
+ and 
+\begin_inset Formula $\VERSOR y$
+\end_inset
+
+ directions of free masses.
+ The motion in 
+\begin_inset Formula $\VERSOR x$
+\end_inset
+
+ and 
+\begin_inset Formula $\VERSOR y$
+\end_inset
+
+ is identical (thus traceless waves).
+ This are physical motions that can e.g.
+ stretch a spring.
+\end_layout
+
+\begin_layout Standard
+A gravitational wave traveling through flat space has a metric 
+\begin_inset Formula 
+\begin{equation}
+g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}\label{Equation: metric with perturbation from a wave}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is the Minkowski metric and 
+\begin_inset Formula $h$
+\end_inset
+
+ a small perturbation.
+ If the wave travels in the 
+\begin_inset Formula $\VERSOR z$
+\end_inset
+
+ direction then 
+\begin_inset Formula 
+\[
+h_{\mu\nu}\sim\SQBRACKETS{\begin{matrix}0\\
+ & a & b\\
+ & b & -a\\
+ &  &  & 0
+\end{matrix}}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ represent the two possible polarizations of the wave.
+ I.e.
+ 
+\begin_inset Formula 
+\[
+h=ah_{+}+bh_{\times}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $h_{+}\sim\SQBRACKETS{\begin{matrix}0\\
+ & 1\\
+ &  & -1\\
+ &  &  & 0
+\end{matrix}}$
+\end_inset
+
+ and 
+\begin_inset Formula $h_{\times}\sim\SQBRACKETS{\begin{matrix}0\\
+ & 0 & 1\\
+ & 1 & 0\\
+ &  &  & 0
+\end{matrix}}$
+\end_inset
+
+ are the 
+\begin_inset Quotes eld
+\end_inset
+
+basis tensors
+\begin_inset Quotes erd
+\end_inset
+
+ representing each polarization, called 
+\begin_inset Quotes eld
+\end_inset
+
+plus
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+cross
+\begin_inset Quotes erd
+\end_inset
+
+ respectively.
+ In 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figure: polarization of a gravitational wave"
+
+\end_inset
+
+ the two polarization modes are represented graphically.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmltag{tag_name=image}{src=https://i.stack.imgur.com/IW50W.png}{style=max-width:
+ 100
+\backslash
+%; width: 444px;}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Polarization modes of a gravitational wave.
+\begin_inset CommandInset label
+LatexCommand label
+name "Figure: polarization of a gravitational wave"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Detection of gravitational waves with Michelson interferometer
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset href
+LatexCommand href
+name "Michelson interferometer"
+target "https://en.wikipedia.org/wiki/Michelson_interferometer"
+literal "false"
+
+\end_inset
+
+ (like the one used to prove that there was no ether) is ideal to detect
+ changes in length in two orthogonal directions.
+ It compares the time it takes light to travel each of the two arms.
+ 
+\end_layout
+
+\begin_layout Standard
+For light we have 
+\begin_inset Formula 
+\[
+\DIFERENTIAL s^{2}=0\text{.}
+\]
+
+\end_inset
+
+ From general relativity we also have 
+\begin_inset Formula 
+\[
+\DIFERENTIAL s^{2}=g_{\mu\nu}\DIFERENTIAL x^{\mu}\DIFERENTIAL x^{\nu}\text{.}
+\]
+
+\end_inset
+
+ Let's consider the Michelson interferometer aligned with its arms in the
+ 
+\begin_inset Formula $\VERSOR x$
+\end_inset
+
+ and 
+\begin_inset Formula $\VERSOR y$
+\end_inset
+
+ direction.
+ If we look what happens to the light only in the 
+\begin_inset Formula $\VERSOR x$
+\end_inset
+
+ direction then 
+\begin_inset Formula $\DIFERENTIAL x^{\mu}$
+\end_inset
+
+ is 
+\begin_inset Formula $\ne0$
+\end_inset
+
+ only for 
+\begin_inset Formula $\mu=1$
+\end_inset
+
+ so 
+\begin_inset Formula 
+\[
+0=g_{11}\DIFERENTIAL x\DIFERENTIAL x\text{.}
+\]
+
+\end_inset
+
+ Replacing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Equation: metric with perturbation from a wave"
+
+\end_inset
+
+ this is
+\begin_inset Formula 
+\[
+0=-c^{2}\DIFERENTIAL t^{2}+\PARENTHESES{1+h_{11}\PARENTHESES{\omega t-\VECTOR k\cdot\VECTOR x}}\DIFERENTIAL x^{2}\text{.}
+\]
+
+\end_inset
+
+This can be seen as a modulation to the distance
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Can it also be seen as a modulation to the speed of light? I mean: 
+\begin_inset Formula $\frac{\DIFERENTIAL x}{\DIFERENTIAL t}=\frac{c}{\sqrt{1+h_{11}\PARENTHESES{\omega t-\VECTOR k\cdot\VECTOR x}}}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ We can integrate 
+\begin_inset Formula $\DIFERENTIAL t$
+\end_inset
+
+ to see how much time it takes light to travel some distance: 
+\begin_inset Formula 
+\begin{align*}
+\intop_{0}^{\tau_{\text{out}}}\DIFERENTIAL t & =\frac{1}{c}\intop_{0}^{L}\sqrt{1+h_{11}}\DIFERENTIAL x\\
+ & \approx\frac{1}{c}\intop_{0}^{L}\PARENTHESES{1+\frac{1}{2}h_{11}\PARENTHESES{\omega t-\VECTOR k\cdot\VECTOR x}+\dots}\DIFERENTIAL x
+\end{align*}
+
+\end_inset
+
+ where in the second line 
+\begin_inset Formula $\sqrt{1+x}\approx1+\frac{x}{2}+\dots$
+\end_inset
+
+.
+ This is the time it takes light to travel from 
+\begin_inset Formula $x=0$
+\end_inset
+
+ to the end of the 
+\begin_inset Formula $\VERSOR x$
+\end_inset
+
+ arm at 
+\begin_inset Formula $x=L$
+\end_inset
+
+.
+ There, there is a mirror so it bounces back so we have the same expression
+ repeated.
+ Thus 
+\begin_inset Formula 
+\begin{equation}
+\tau_{0\to L\to0}=\frac{2L}{c}+\frac{1}{2c}\intop_{0}^{L}h_{11}\PARENTHESES{\omega t-\VECTOR k\cdot\VECTOR x}\DIFERENTIAL x\text{.}\label{Equation: tau 0 L 0 in x}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the interferometer we are interested in the difference in time it takes
+ light to travel each arm, i.e.
+ 
+\begin_inset Formula 
+\[
+\Delta\tau=\tau_{0\to L\to0}^{\VERSOR x}-\tau_{0\to L\to0}^{\VERSOR y}\text{.}
+\]
+
+\end_inset
+
+The expression in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Equation: tau 0 L 0 in x"
+
+\end_inset
+
+ is for light traveling in the 
+\begin_inset Formula $\VERSOR x$
+\end_inset
+
+ direction.
+ In the 
+\begin_inset Formula $\VERSOR y$
+\end_inset
+
+ direction it is the same but with 
+\begin_inset Formula $h_{22}$
+\end_inset
+
+ instead of 
+\begin_inset Formula $h_{11}$
+\end_inset
+
+.
+ If we now consider (to make it simple) a wave propagating in the 
+\begin_inset Formula $\VERSOR z$
+\end_inset
+
+ direction then we have 
+\begin_inset Formula 
+\[
+h_{11}=-h_{22}=h
+\]
+
+\end_inset
+
+ so 
+\begin_inset Formula 
+\[
+\Delta\tau=\frac{1}{c}\intop_{0}^{L}h\PARENTHESES{\omega t-\VECTOR k\cdot\VECTOR x}\DIFERENTIAL x\text{.}
+\]
+
+\end_inset
+
+We can also consider the limit 
+\begin_inset Formula 
+\[
+\omega\tau_{0\to L\to0}\ll1
+\]
+
+\end_inset
+
+which is the same as considering the wavelength of the gravitational wave
+ much bigger than the length of the arms of the interferometer or 
+\begin_inset Formula 
+\[
+kL\ll1\text{. }
+\]
+
+\end_inset
+
+ In this limit we can regard 
+\begin_inset Formula $h$
+\end_inset
+
+ as constant along the integration, i.e.
+ 
+\begin_inset Formula 
+\[
+h\PARENTHESES{\omega t-\VECTOR k\cdot\VECTOR x}\approx h\PARENTHESES{\omega t}
+\]
+
+\end_inset
+
+ and so 
+\begin_inset Formula $\intop_{0}^{L}h\DIFERENTIAL x=hL$
+\end_inset
+
+.
+ So finally 
+\begin_inset Formula 
+\begin{equation}
+\Delta\tau=h\PARENTHESES t\frac{2L}{c}\text{.}\label{Equation: sa7td89gasdoasgyou}
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula $\Delta\tau$
+\end_inset
+
+ is basically the signal that we will measure, so increasing 
+\begin_inset Formula $L$
+\end_inset
+
+ also increases the signal
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Increasing 
+\begin_inset Formula $L$
+\end_inset
+
+ also increases the signal
+\begin_inset Quotes erd
+\end_inset
+
+ is true in the 
+\begin_inset Formula $L\ll\lambda$
+\end_inset
+
+ limit.
+ Anyway, for a 
+\begin_inset Formula $1\KILO{Hz}$
+\end_inset
+
+ signal we have 
+\begin_inset Formula $\lambda_{1\KILO{Hz}}\approx300\KILO m$
+\end_inset
+
+ so current detectors (
+\begin_inset Formula $\sim5\KILO m$
+\end_inset
+
+) are still well within that limit.
+\end_layout
+
+\end_inset
+
+.
+ That is the reason for making very big interferometers.
+ The limiting factor for the size of the current detectors is the money
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+The freely falling masses
+\end_layout
+
+\begin_layout Standard
+As stated before, a gravitational wave induces a relative movement between
+ freely falling masses.
+ In the Michelson interferometer these masses should be the beam splitter
+ and the mirrors in the end of each arm.
+ If these elements are attached to the ground, they are the opposite to
+ 
+\begin_inset Quotes eld
+\end_inset
+
+freely falling masses
+\begin_inset Quotes erd
+\end_inset
+
+.
+ If this were the case, when the gravitational wave arrives it will try
+ to change the distance between them but the other forces would compensate
+ this and they would not move.
+ So the mirrors and the beam splitter have to be mounted in some special
+ way such that they can be regarded as free masses.
+ 
+\end_layout
+
+\begin_layout Standard
+To accomplish this they are suspended like pendulums (sophisticated pendulums).
+ In the low angle regime the equation of motion for the pendulum is 
+\begin_inset Formula $m\ddot{x}+kx=F_{\text{external}}$
+\end_inset
+
+ which in the 
+\bar under
+frequency domain
+\bar default
+ can be written as 
+\begin_inset Formula 
+\begin{equation}
+\PARENTHESES{-\frac{m}{k}\omega^{2}+1}x=\frac{1}{k}F_{\text{external}}\text{.}\label{Equation: pendulum in frequency domain}
+\end{equation}
+
+\end_inset
+
+ Note here that for 
+\begin_inset Formula $\omega\gg\sqrt{\frac{k}{m}}$
+\end_inset
+
+ the dominant term is 
+\begin_inset Formula $m\ddot{x}$
+\end_inset
+
+ so it behaves as a free mass while for 
+\begin_inset Formula $\omega\ll\sqrt{\frac{k}{m}}$
+\end_inset
+
+ the 
+\begin_inset Formula $kx$
+\end_inset
+
+ term dominates and it keeps the mass fixed at a mean position.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Why pendulums and not springs?
+\end_layout
+
+\begin_layout Standard
+The equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Equation: pendulum in frequency domain"
+
+\end_inset
+
+ describes a mass attached to a spring, which is the small angle limit for
+ a pendulum.
+ Why using pendulums instead of springs? The reason is to reduce noise.
+ In the case of the pendulum the 
+\begin_inset Formula $\VERSOR x$
+\end_inset
+
+ component of the restoring force is a projection of the gravitational force
+ exerted by the Earth, which is a conservative force.
+ In the case of a spring, it is the mean force resulting after adding all
+ the microscopic forces from the particles that make up the spring.
+ Thus, it is to be expected that the spring is more noisy.
+ More details in
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The importance of multiple observations
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "radiation pattern"
+target "https://en.wikipedia.org/wiki/Radiation_pattern"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ for a gravitational wave detector looks like the one shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figure: gravitational wave detector radiation pattern"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ It is remarkably isotropic
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+.
+ This makes it impossible to tell where the wave is coming from
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The opposite to this is an optical telescope that has a radiation pattern
+ that is almost a Dirac delta pointing in the direction of observation.
+ 
+\end_layout
+
+\end_inset
+
+.
+ Multiple observations are required to tell where an event is coming from
+ using the arrival time of the wave to each observatory and the distance
+ between them:
+\end_layout
+
+\begin_layout Itemize
+Observation at one single point: You cannot tell anything about where the
+ wave is coming from.
+\end_layout
+
+\begin_layout Itemize
+Observation at two points: It is possible to determine a circumference in
+ the sky.
+\end_layout
+
+\begin_layout Itemize
+Observation at three points: Determines the intersection of two circles
+ so the event is coming from one of two points.
+\end_layout
+
+\begin_layout Itemize
+Observation at four points: Determines the position unambiguously.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmltag{tag_name=image}{src=media/1.svg}{style=max-width: 100
+\backslash
+%;}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Response of a gravitational wave interferometer as a function of direction,
+ averaged over polarizations.
+ Image copy-pasted from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "Figure: gravitational wave detector radiation pattern"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Noise sources
+\end_layout
+
+\begin_layout Standard
+The signal produced by gravitational waves in gravitational detectors is
+ very small, we are talking of
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\frac{\Delta L}{L}\sim10^{-22}\text{.}\label{Equation: DeltaL sobre L que queremos medir}
+\end{equation}
+
+\end_inset
+
+ Thus, it is crucial to understand and mitigate the noise sources.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Shot noise
+\end_layout
+
+\begin_layout Standard
+A Michelson interferometer can be seen as a transducer that converts differences
+ in length to differences in light power at its output.
+ If the wavelength of the light is kept constant (and so the energy of the
+ photons) then measuring the power is equivalent to counting the number
+ of photons per unit time received.
+ These photons follow a Poisson distribution with expectation value 
+\begin_inset Formula $\frac{P_{\text{out}}}{h\nu}$
+\end_inset
+
+.
+ This introduces a fundamental source of noise with origin in quantum fluctuatio
+ns.
+ 
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $\frac{P_{\text{out}}}{h\nu}\ggg1$
+\end_inset
+
+ the Poisson distribution can be approximated by a Gaussian with 
+\begin_inset Formula $\mu=\sigma^{2}=\frac{P_{\text{out}}}{h\nu}$
+\end_inset
+
+.
+ In this limit we have 
+\begin_inset Formula 
+\[
+\frac{\sigma}{\mu}=\sqrt{\frac{h\nu}{P_{\text{out}}}}
+\]
+
+\end_inset
+
+ so making 
+\begin_inset Formula $P_{\text{out}}$
+\end_inset
+
+ as large as possible reduces the shot noise.
+ There are a number of ways of accomplishing this, by increasing the laser
+ power, using a 
+\emph on
+power recycling technique
+\emph default
+, etc.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Thermal noise
+\end_layout
+
+\begin_layout Standard
+As every system in the universe, here we also have thermal noise.
+ It is indeed one of the strongest noise sources
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+.
+ Thermal noise in a gravitational wave detector is a generalization of the
+ 
+\emph on
+Brownian motion
+\emph default
+.
+ Each of the nearly free mirrors can be regarded as a very big Brownian
+ particle.
+ Air molecules hitting on them would induce small Brownian motion, that
+ is why the mirrors are suspended in vacuum.
+ 
+\end_layout
+
+\begin_layout Standard
+There are still other sources that can induce Brownian motion.
+ One of them is related to the materials used to hold the mirrors.
+ This explains why mirrors are held with pendulum-like systems: the restoring
+ force is the horizontal projection of gravity which, as a conservative
+ force, lacks of thermal noise
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+.
+ This makes the thermal noise coming from the holding mechanism negligible.
+ 
+\end_layout
+
+\begin_layout Standard
+The biggest contribution to thermal noise are the internal degrees of freedom
+ of the mirrors.
+ Basically there are vibrations that introduce a noise spectrum starting
+ at 
+\begin_inset Formula $10\KILO{Hz}$
+\end_inset
+
+.
+ To reduce this source of noise there are basically two options: 1) use
+ 
+\begin_inset Quotes eld
+\end_inset
+
+the best possible material
+\begin_inset Quotes erd
+\end_inset
+
+ for the mirrors and 2) lower the temperature.
+ Current interferometers use mirrors made of 
+\emph on
+fused silica
+\emph default
+ at room temperature.
+ Future interferometers are planning to use cryogenic systems instead.
+ 
+\end_layout
+
+\begin_layout Standard
+Another source of thermal noise is the coating of the mirrors.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Seismic noise
+\end_layout
+
+\begin_layout Standard
+It is not hard to understand what this means and/or where it comes from.
+ When seeking for such small displacements, every vibration that the Earth
+ makes is important.
+ Apparently, every part of the Earth's surface is continuously shaking with
+ amplitudes of 
+\begin_inset Formula $\sim1\MICRO m$
+\end_inset
+
+ on time scales of seconds.
+ If we are trying to measure magnitudes as stated in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Equation: DeltaL sobre L que queremos medir"
+
+\end_inset
+
+ with 
+\begin_inset Formula $L\sim1\KILO m$
+\end_inset
+
+, this 
+\begin_inset Formula $1\MICRO m$
+\end_inset
+
+ shakes are almost infinite.
+ There are two possibilities to fight against this noise: 1) somehow isolate
+ our system and 2) go deep underground where the seismic noise is smaller.
+ 
+\end_layout
+
+\begin_layout Standard
+Current detectors are all at ground level and use sophisticated pendulum
+ systems to isolate the seismic noise.
+ The best seismic noise attenuator to date (2013) is the one used in the
+ Virgo detector, shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figure: Virgo super attenuator"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmltag{tag_name=image}{src=media/2.svg}{style=max-width: 100
+\backslash
+%;}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Taken from
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Saulson 2013 gravitational wave detection principles and practice"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "Figure: Virgo super attenuator"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Other noises of source
+\end_layout
+
+\begin_layout Standard
+Of course there are other sources of noise, in the electronics, in the control
+ systems, in the intensity and wavelength of the laser, etc.
+ 
+\end_layout
+
+\begin_layout Section*
+30.09.2021
+\end_layout
+
+\begin_layout Standard
+Gravitational waves arise in the linearized theory.
+ The speed of gravity is the same as the speed of light.
+ General relativity is highly non linear
+\begin_inset Formula 
+\[
+R\COVARIANTINDEX{\mu\nu}=-\frac{1}{2}g\COVARIANTINDEX{\nu\nu}R=\frac{8\pi G}{c^{4}}T\COVARIANTINDEX{\mu\nu}
+\]
+
+\end_inset
+
+ Now we consider a weak field approximation, basically very far away from
+ the sources.
+ The waves are just perturbations to a time-independent background curvature.
+ For this to hold the curvature radius has to be much greater than the wavelengt
+h of the gravitational waves
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Does this mean that even on Earth (i.e.
+ very far away from sources and in a relatively weak field) there is a regime
+ for non linear waves?
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\text{Time independent curvature radius}\gg\text{wavelength}
+\]
+
+\end_inset
+
+ In this conditions the metric tensor can be written as 
+\begin_inset Formula 
+\[
+g\COVARIANTINDEX{\mu\nu}=\eta\COVARIANTINDEX{\mu\nu}+h\COVARIANTINDEX{\mu\nu}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is the Minkowski and 
+\begin_inset Formula $h$
+\end_inset
+
+ is a small perturbation with 
+\begin_inset Formula $\MODULE{h\COVARIANTINDEX{\mu\nu}}\ll1$
+\end_inset
+
+.
+ Because our space is esentialy flat (linearized theory) then it holds 
+\begin_inset Formula 
+\[
+h\CONTRAVARIANTINDEX{\mu\nu}=\eta\CONTRAVARIANTINDEX{\mu\alpha}\eta\CONTRAVARIANTINDEX{\nu\beta}h\COVARIANTINDEX{\alpha\beta}
+\]
+
+\end_inset
+
+ and so the inverse metric is 
+\begin_inset Formula 
+\[
+h\CONTRAVARIANTINDEX{\mu\nu}=\eta\CONTRAVARIANTINDEX{\mu\nu}-h\CONTRAVARIANTINDEX{\mu\nu}\text{.}
+\]
+
+\end_inset
+
+ Now I see 
+\begin_inset Quotes eld
+\end_inset
+
+trace reversed
+\begin_inset Quotes erd
+\end_inset
+
+ and it says 
+\begin_inset Formula 
+\[
+\bar{h}\COVARIANTINDEX{\mu\nu}=h\COVARIANTINDEX{\mu\nu}-\frac{1}{2}\eta\COVARIANTINDEX{\mu\nu}h
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $h=h\COVARIANTINDEX{\mu\nu}h\CONTRAVARIANTINDEX{\mu\nu}$
+\end_inset
+
+.
+ I don't know what this is.
+ 
+\end_layout
+
+\begin_layout Standard
+There is a gauge freedom given by the infinitesimal transformation
+\begin_inset Formula 
+\[
+x\CONTRAVARIANTINDEX{\mu}\to x\PRIME\CONTRAVARIANTINDEX{\mu}=x\CONTRAVARIANTINDEX{\mu}+\xi\CONTRAVARIANTINDEX{\mu}\PARENTHESES x
+\]
+
+\end_inset
+
+ and this holds if 
+\begin_inset Formula $\MODULE{\partial\COVARIANTINDEX{\mu}\xi\COVARIANTINDEX{\nu}}\ll\MODULE{h\COVARIANTINDEX{\mu\nu}}$
+\end_inset
+
+.
+ This transformation modifies 
+\begin_inset Formula $h$
+\end_inset
+
+ to 
+\begin_inset Formula 
+\[
+h\COVARIANTINDEX{\mu\nu}\PARENTHESES x\to h\PRIME\COVARIANTINDEX{\mu\nu}\PARENTHESES x=h\COVARIANTINDEX{\mu\nu}\PARENTHESES x-\PARENTHESES{\partial\COVARIANTINDEX{\mu}\xi\COVARIANTINDEX{\nu}-\partial\COVARIANTINDEX{\nu}\xi\COVARIANTINDEX{\mu}}
+\]
+
+\end_inset
+
+Cannot read something in blue, next: 
+\begin_inset Formula $\MODULE{h\PRIME\COVARIANTINDEX{\mu\nu}}\ll1$
+\end_inset
+
+.
+ Now we choose the Lorentz (Hilbert) gauge which means 
+\begin_inset Formula 
+\[
+h\COVARIANTINDEX{\mu\nu,\nu}=0
+\]
+
+\end_inset
+
+ and as a result we have (the Einstein equation is this?)
+\begin_inset Formula 
+\[
+\PARENTHESES{-\frac{\partial^{2}}{\partial^{2}t^{2}}+\nabla^{2}}\bar{h}\CONTRAVARIANTINDEX{\mu\nu}=-16\pi T\CONTRAVARIANTINDEX{\mu\nu}
+\]
+
+\end_inset
+
+ where now we are using 
+\begin_inset Formula 
+\[
+G=c=1\text{.}
+\]
+
+\end_inset
+
+ In vacuum 
+\begin_inset Formula 
+\[
+\square\bar{h}\CONTRAVARIANTINDEX{\mu\nu}=0
+\]
+
+\end_inset
+
+ so this means that we will have plane wave solutions of the form 
+\begin_inset Formula 
+\[
+\bar{h}\CONTRAVARIANTINDEX{\mu\nu}=\mathscr{A}e\CONTRAVARIANTINDEX{\mu\nu}e^{ik\COVARIANTINDEX{\alpha}k\CONTRAVARIANTINDEX{\alpha}}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\mathscr{A}$
+\end_inset
+
+ is the amplitude, 
+\begin_inset Formula $e\CONTRAVARIANTINDEX{\mu\nu}$
+\end_inset
+
+ is the polarization tensor and 
+\begin_inset Formula $e^{i\dots}$
+\end_inset
+
+ is an exponential.
+ 
+\begin_inset Formula $k\CONTRAVARIANTINDEX{\alpha}$
+\end_inset
+
+ is the wave vector which is lightlike, i.e.
+ 
+\begin_inset Formula 
+\[
+k\COVARIANTINDEX{\mu}k\CONTRAVARIANTINDEX{\mu}=0\GRAY{\leftarrow\text{Lightlike}}
+\]
+
+\end_inset
+
+ (because the wave travels at speed 
+\begin_inset Formula $c$
+\end_inset
+
+).
+ The polarization and wave vector are orthogonal, this means that 
+\begin_inset Formula 
+\[
+e\CONTRAVARIANTINDEX{\mu\nu}k\COVARIANTINDEX{\nu}=0\GRAY{\leftarrow\text{Transverse waves}}
+\]
+
+\end_inset
+
+ so this means that the waves are transverse.
+ The degrees of freedom are 6 in total, I did not follow the explanation.
+ The calculation is 
+\begin_inset Formula 
+\[
+16\text{ components and gauge conditions}\rightarrow10-4=6\text{.}\GRAY{\leftarrow\text{Degrees of freedom}}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The waves are 
+\bar under
+transverse and traceless
+\bar default
+.
+ Transverse wave means 
+\begin_inset Formula 
+\[
+e\CONTRAVARIANTINDEX{ij}k\COVARIANTINDEX j=0\GRAY{\leftarrow\text{Transverse waves}}
+\]
+
+\end_inset
+
+ and this comes from 
+\begin_inset Formula $e\CONTRAVARIANTINDEX{0p}=0$
+\end_inset
+
+ (?).
+ Traceless wave means that 
+\begin_inset Formula 
+\[
+e\CONTRAVARIANTINDEX i\COVARIANTINDEX i=0\GRAY{\leftarrow\text{Traceless waves}}
+\]
+
+\end_inset
+
+ and I am not sure where this comes from.
+ We can use a transverse and traceless (TT) gauge for the metric and this
+ will give us that there are two independent polarizations and trace-reversed
+ metric 
+\begin_inset Formula 
+\[
+\bar{h}\COVARIANTINDEX{\mu\nu}=h\COVARIANTINDEX{\mu\nu}\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's now consider a wave propagating in the 
+\begin_inset Formula $\VERSOR z$
+\end_inset
+
+ direction.
+ This means that 
+\begin_inset Formula 
+\[
+\text{Wave in the }z\text{ direction}\rightarrow\LBRACE{\begin{aligned} & k\COVARIANTINDEX z=\omega\\
+ & k\CONTRAVARIANTINDEX 0=\omega\\
+ & k\COVARIANTINDEX x=k\COVARIANTINDEX y=0\\
+ & e\CONTRAVARIANTINDEX{0\mu}=e\CONTRAVARIANTINDEX{z\mu}=0\\
+ & e\CONTRAVARIANTINDEX{xx}=-e\CONTRAVARIANTINDEX{yy}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ The independent components are 
+\begin_inset Formula 
+\[
+\GRAY{\text{Two independent components}\rightarrow}\LBRACE{\begin{aligned} & e\CONTRAVARIANTINDEX{xx}\DEF e^{\oplus}\equiv\text{plus polarization}\\
+ & e\CONTRAVARIANTINDEX{xy}\DEF e^{\otimes}\equiv\text{cross polarization}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If now we assume 
+\begin_inset Formula $e\CONTRAVARIANTINDEX{xy}=0$
+\end_inset
+
+ then we only have 
+\begin_inset Formula $\oplus$
+\end_inset
+
+ polarization, i.e.
+ a 
+\begin_inset Quotes eld
+\end_inset
+
+pure 
+\begin_inset Formula $\oplus$
+\end_inset
+
+ metric
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In this case the line element has the form 
+\begin_inset Formula 
+\[
+\DIFERENTIAL s^{2}=-\DIFERENTIAL t^{2}+\PARENTHESES{1+h_{\oplus}}\DIFERENTIAL x^{2}+\PARENTHESES{1-h_{\oplus}}\DIFERENTIAL y^{2}+\DIFERENTIAL z^{2}
+\]
+
+\end_inset
+
+ with 
+\begin_inset Formula $h_{\oplus}=\mathscr{A}e\CONTRAVARIANTINDEX{xx}e^{i\omega\PARENTHESES{t-z}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If we have a wave with 
+\begin_inset Formula $e\CONTRAVARIANTINDEX{xx}=0$
+\end_inset
+
+ then we have 
+\begin_inset Quotes eld
+\end_inset
+
+pure 
+\begin_inset Formula $\otimes$
+\end_inset
+
+ polarization
+\begin_inset Quotes erd
+\end_inset
+
+ and we have the same but with a 45 degrees rotation.
+ 
+\end_layout
+
+\begin_layout Standard
+The effect of each of these polarizations on a ring of free particles is
+ shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figure: polarization of a gravitational wave"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmltag{tag_name=image}{src=https://upload.wikimedia.org/wikipedia/commons/thumb/0
+/0d/Quadrupol_Wave.gif/330px-Quadrupol_Wave.gif}{style=max-width: 100
+\backslash
+%;}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Effect of a gravitational wave propagating in the direction orthogonal to
+ the screen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can also define a circular polarization basis as 
+\begin_inset Formula 
+\[
+\GRAY{\text{Circular polarization}\rightarrow}\LBRACE{\begin{aligned} & e_{R}=\frac{1}{\sqrt{2}}\PARENTHESES{e_{\oplus}+ie_{\otimes}}\\
+ & e_{L}=\frac{1}{\sqrt{2}}\PARENTHESES{e_{\oplus}-ie_{\otimes}}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Let's look now a the geodesic equation: 
+\begin_inset Formula 
+\[
+\frac{\DIFERENTIAL^{2}x\CONTRAVARIANTINDEX{\alpha}}{\DIFERENTIAL\tau^{2}}+\Gamma_{\mu\nu}^{\alpha}\frac{\DIFERENTIAL x\CONTRAVARIANTINDEX{\mu}}{\DIFERENTIAL\tau}\frac{\DIFERENTIAL x\CONTRAVARIANTINDEX{\nu}}{\DIFERENTIAL\tau}=0\GRAY{\leftarrow\text{Geodesic equation}}
+\]
+
+\end_inset
+
+ If we use the TT gauge (see before) this is 
+\begin_inset Formula 
+\[
+\frac{\DIFERENTIAL^{2}x\CONTRAVARIANTINDEX i}{\DIFERENTIAL\tau^{2}}=-\Gamma_{00}^{i}=-\frac{1}{2}\PARENTHESES{2h\COVARIANTINDEX{i0,0}-h\COVARIANTINDEX{00,i}}=0
+\]
+
+\end_inset
+
+ so this means that the particle is not accelerated.
+ This means that 
+\end_layout
+
+\begin_layout Itemize
+the TT gauge defines a coordinate system that is co-moving with freely falling
+ test particles
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This means following the motion induced by the wave?
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+TT time is the proper time on a clock of a freely falling test particle
+ (
+\begin_inset Formula $h\COVARIANTINDEX{0\mu}=0$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we look at the equation of geodesic deviation, which (I believe) means
+ how the separation of neighboring particles changes, i.e.
+ it somehow means the tidal forces.
+ This equation is 
+\begin_inset Formula 
+\[
+\frac{\DIFERENTIAL^{2}\xi}{\DIFERENTIAL\tau^{2}}=R\CONTRAVARIANTINDEX i\COVARIANTINDEX{0j0}\xi\CONTRAVARIANTINDEX j
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $R$
+\end_inset
+
+ is the oscillating curvature tensor from a passing wave 
+\begin_inset Formula 
+\[
+R\CONTRAVARIANTINDEX i\COVARIANTINDEX{0j0}=\frac{1}{2}h^{\PARENTHESES{TF?}}\CONTRAVARIANTINDEX i\COVARIANTINDEX{j,00}
+\]
+
+\end_inset
+
+ with initially 
+\begin_inset Formula $\xi\CONTRAVARIANTINDEX j\PARENTHESES 0=$
+\end_inset
+
+ something with 
+\begin_inset Formula $k$
+\end_inset
+
+ that my eyes cannot see.
+ Somehow this will induce a tidal force between the two neighboring particles
+ and so the total force will be 
+\begin_inset Formula 
+\[
+F_{\text{total}}=F_{\text{gravitational wave}}+F_{\text{others}}\text{.}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Detection of gravitational waves
+\end_layout
+
+\begin_layout Standard
+See slides.
+ We can rewrite 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Equation: sa7td89gasdoasgyou"
+
+\end_inset
+
+ as 
+\begin_inset Formula 
+\[
+\frac{h}{2}=\frac{c\Delta t}{L}
+\]
+
+\end_inset
+
+ and here we identify 
+\begin_inset Formula 
+\[
+\frac{d\Delta t}{L}=\frac{\Delta L}{L}
+\]
+
+\end_inset
+
+ and from theory we have 
+\begin_inset Formula 
+\[
+\frac{h}{2}\sim10^{-21}
+\]
+
+\end_inset
+
+ and so we see that this problem is really complicated, and we can estimate
+ how to build our detectors.
+ 
+\end_layout
+
+\begin_layout Section*
+07.10.2021
+\end_layout
+
+\begin_layout Section
+Gravitational wave sources
+\end_layout
+
+\begin_layout Standard
+In principle everything is a source, but we will consider only sources that
+ can produce waves detectable by detectors.
+ 
+\end_layout
+
+\begin_layout Subsection
+Binary systems
+\end_layout
+
+\begin_layout Standard
+This is usually a last problem in a GR course.
+ There are two point masses of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ both which are orbiting.
+ As a result of gravitational radiation the energy is lost and the distance
+ between the particles gets smaller, this increases 
+\begin_inset Formula $\omega$
+\end_inset
+
+, this increases the radiation (i.e.
+ the amplitude), and so on.
+ In reality the point masses are not point and at some point they collide
+ and become one single mass.
+ The results are summarized in the slides.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Binary pulsars
+\end_layout
+
+\begin_layout Standard
+With pulsars we can see at the period shift.
+ See 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.google.com/search?q=pulsar+period+shift&client=ubuntu&hs=8dn&channel=fs&sxsrf=AOaemvLE6YV8Jd4B1_ID5JYaMl6pcmAszw:1633597052054&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjMiPmf97fzAhUSP-wKHeD6AHAQ_AUoAXoECAEQAw&biw=1920&bih=969&dpr=1#imgrc=r_Rt-hFumJNK8M"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Black hole binaries
+\end_layout
+
+\begin_layout Standard
+Emission by black holes is actually easier to model than that of neutron
+ stars because there is no matter.
+ The models for sources with black holes are valid for any mass, it does
+ not matter.
+ With neutron stars this is not the case because if you have a model for
+ neutron stars of mass 
+\begin_inset Formula $m$
+\end_inset
+
+ it may not hold for mass 
+\begin_inset Formula $M$
+\end_inset
+
+ because many things inside the neutron star change.
+ 
+\end_layout
+
+\begin_layout Standard
+The higher frequency a black hole can emit is given by the 
+\begin_inset Quotes eld
+\end_inset
+
+quasi normal modes
+\begin_inset Quotes erd
+\end_inset
+
+ obtained by perturbating the surface of a black hole.
+ 
+\end_layout
+
+\begin_layout Standard
+The peak frequency of a BNS system is lower than that of black holes.
+ The reason is that the neutron stars are much bigger in size, so they 
+\begin_inset Quotes eld
+\end_inset
+
+touch
+\begin_inset Quotes erd
+\end_inset
+
+ before than the two black holes.
+ They also have much more complicated quasi normal modes which have lower
+ frequency.
+ 
+\end_layout
+
+\begin_layout Standard
+There are different flavors of black holes:
+\end_layout
+
+\begin_layout Itemize
+Total mass.
+ Depending on the total mass of the binary we can classify them like this:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Stellar mass BH.
+ This is when 
+\begin_inset Formula $3M_{\sun}<M_{BH}<100M_{\sun}$
+\end_inset
+
+.
+ These are black holes formed from the decay of a star.
+\end_layout
+
+\begin_layout Itemize
+Intermediate mass BH.
+ When 
+\begin_inset Formula $100M_{\sun}<M_{BH}<10^{5}M_{\sun}$
+\end_inset
+
+.
+ These black holes do not form from supernova explosions.
+ One mechanism for these black holes is merging of multiple black holes.
+\end_layout
+
+\begin_layout Itemize
+Super massive BH.
+ Those usually found in the center of the galaxies.
+ 
+\end_layout
+
+\begin_layout Itemize
+Near solar mass BH.
+ 
+\begin_inset Formula $M_{BH}<3M_{\sun}$
+\end_inset
+
+.
+ These have not been observed yet.
+ It would be a break through for dark matter.
+ There is a minimum mass for black holes given by Hawking radiation, it
+ it is smaller they would have already evaporate.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The astrophysical sources of gravitational waves by binary black holes are
+ intermediate mass black holes.
+ This usually happens in the center of galaxies: The density of objects
+ is bigger and also older so stars have already converted into black holes
+ and black holes have already merged.
+ 
+\end_layout
+
+\begin_layout Standard
+The higher the mass, the lower the peak frequency.
+ Even if this may appear counter intuitive, the reason is that if there
+ is more mass then the surface of the black hole is bigger and so the quasi
+ normal modes (oscillations of its surface) have longer wavelength so lower
+ frequency.
+ 
+\end_layout
+
+\begin_layout Subsection
+Supernovae 
+\end_layout
+
+\begin_layout Standard
+The explosion of a star is not spherically symmetric (because the star rotates,
+ and other effects) and because it is a very energetic process, it can emit
+ gravitational waves detectable.
+ The issue is that there is not a model for this type of wave basically
+ because a supernova is a mess.
+ 
+\end_layout
+
+\begin_layout Standard
+The detection of gravitational waves from supernovae (or neutrinos) is very
+ important to understand what kind of object is left after such an event.
+ The reason is that gravitational waves (and neutrinos) travel directly
+ towards us without interactions, so it is a clean signal of what has happened.
+ Light, which is what we use now to observe these events, scatters a lot
+ with the matter of the dying star so it is very distorted.
+ 
+\end_layout
+
+\begin_layout Subsection
+Rotating neutron stars
+\end_layout
+
+\begin_layout Standard
+Rotating neutron stars emit very weak but continuous signals.
+ If you take data for many time (say 10 years) you can integrate the power
+ of this signal over all your period.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmltag{tag_name=image}{src=https://astrobites.org/wp-content/uploads/2018/01/non
+axisymmetric_neutron_star_sketch_lowres1.gif}{style=max-width: 100
+\backslash
+%;}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Emission of gravitational waves by a rotating neutron star.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Stochastic background
+\end_layout
+
+\begin_layout Standard
+This signal is supposed to be constantly present, though it has not a fixed
+ frequency (like rotating neutron stars) but rather a continuous spectrum.
+ This is like the CMB background.
+ 
+\end_layout
+
+\begin_layout Standard
+We can classify this background into two categories:
+\end_layout
+
+\begin_layout Enumerate
+Population of point sources.
+ This means that there are many events that happened in the history of the
+ universe, and we see all of them superimposed.
+ Analogy: the noise that the drops of water produce when it rains; you listen
+ a continuous noise and not the individual events.
+ This is expected to be between 
+\begin_inset Formula $10\UNIT{Hz}$
+\end_inset
+
+ and 
+\begin_inset Formula $4\KILO{Hz}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Cosmological.
+ The anisotropies observed in the CMB are related with differences in the
+ density of energy.
+ This must have produced somehow a gravitational wave background similar
+ to the CMB.
+ Because this background is very red shifted, the peak frequency is very
+ low to be observed nowadays.
+ There are other models which propose a very high frequency despite the
+ red shift.
+ We really don't know yet.
+ 
+\end_layout
+
+\begin_layout Section*
+14.10.2021
+\end_layout
+
+\begin_layout Section
+Source modeling
+\end_layout
+
+\begin_layout Standard
+Everything from today was taken from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ chapter 3.
+\end_layout
+
+\begin_layout Standard
+We are going to see the modeling of sources in a Newtonian limit.
+ The non-Newtonian limit is very cumbersome.
+\end_layout
+
+\begin_layout Standard
+We have seen that if there is a rigid body with some extension in space,
+ then we can measure a gravitational wave by measuring the heat that it
+ will produce due to friction in this body.
+ Gravitational waves have no energy locally (?).
+ 
+\end_layout
+
+\begin_layout Standard
+For a gravitational wave we consider a metric of the form 
+\begin_inset Formula 
+\[
+g\COVARIANTINDEX{\mu\nu}=\eta\COVARIANTINDEX{\mu\nu}+h\COVARIANTINDEX{\mu\nu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\[
+g\COVARIANTINDEX{ij}=\eta\COVARIANTINDEX{ij}+\nu h^{\PARENTHESES 1}\COVARIANTINDEX{ij}+\nu^{2}h^{\PARENTHESES 2}\COVARIANTINDEX{ij}+\dots
+\]
+
+\end_inset
+
+ This allows us to compute the Einstein tensor as a series 
+\begin_inset Formula 
+\begin{align*}
+G\COVARIANTINDEX{\mu\nu} & =R\COVARIANTINDEX{\mu\nu}-\frac{1}{2}g\COVARIANTINDEX{\mu\nu}R\\
+ & =\GUNDERBRACE{G\COVARIANTINDEX{ij}}{=0}+G^{\PARENTHESES 1}\COVARIANTINDEX{ij}+G^{\PARENTHESES 2}\COVARIANTINDEX{ij}+\dots
+\end{align*}
+
+\end_inset
+
+ EFE (Einstein Field Equation?) in vacuum 
+\begin_inset Formula 
+\[
+G\COVARIANTINDEX{\mu\nu}=0\Rightarrow0\approx\nu G^{\PARENTHESES 1}\COVARIANTINDEX{ij}\PARENTHESES{h^{\PARENTHESES 1}\COVARIANTINDEX{ij}}+\GUNDERBRACE{\nu^{2}\SQBRACKETS{G^{\PARENTHESES 2}\COVARIANTINDEX{ij}\PARENTHESES{h^{\PARENTHESES 1}\COVARIANTINDEX{ij}}+G^{\PARENTHESES 1}\COVARIANTINDEX{ij}\PARENTHESES{h^{\PARENTHESES 2}\COVARIANTINDEX{ij}}}}{=0}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $\ORDER{h^{2}}$
+\end_inset
+
+: effective stress-energy tensor 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ this is the source term for 
+\begin_inset Formula $h^{\PARENTHESES 2}\COVARIANTINDEX{ij}$
+\end_inset
+
+ contributions.
+ I think that now we replace this back into the Einstein equation to find
+ the stress-energy carried by the gravitational wave 
+\begin_inset Formula 
+\[
+G^{\PARENTHESES 1}\COVARIANTINDEX{ij}\PARENTHESES{h^{\PARENTHESES 2}\COVARIANTINDEX{ij}}=\frac{8\pi G}{c^{4}}T^{\text{GW}}\COVARIANTINDEX{ij}\GRAY{\leftarrow\text{Stress-energy of a GW}}
+\]
+
+\end_inset
+
+ We can also replace the 
+\begin_inset Formula $h^{\PARENTHESES 2}$
+\end_inset
+
+ by 
+\begin_inset Formula $G^{\PARENTHESES 2}\COVARIANTINDEX{ij}\PARENTHESES{h^{\PARENTHESES 1}\COVARIANTINDEX{ij}}$
+\end_inset
+
+ from the previous equation (I'm not following) so 
+\begin_inset Formula 
+\[
+T^{\text{GW}}\COVARIANTINDEX{ij}=\frac{c^{4}}{8\pi G}G^{\PARENTHESES 2}\PARENTHESES{h^{\PARENTHESES 1}\COVARIANTINDEX{ij}}
+\]
+
+\end_inset
+
+ and this allows us to create a stress-energy for a gravitational wave with
+ first order 
+\begin_inset Formula $h\COVARIANTINDEX{ij}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Gauge invariance
+\end_layout
+
+\begin_layout Standard
+We take the average over a region of space-time that contains several gravitatio
+nal wave wavelengths.
+ We take the following average: 
+\begin_inset Formula 
+\[
+\frac{c^{4}}{8\pi G}\ANGLEBRACKETS{R^{\PARENTHESES 2}\COVARIANTINDEX{ij}\PARENTHESES{h^{\PARENTHESES 1}\COVARIANTINDEX{ij}}-\frac{h\COVARIANTINDEX{ij}}{2}R^{\PARENTHESES 2}}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $R^{\PARENTHESES 2}\COVARIANTINDEX{ij}\PARENTHESES{h^{\PARENTHESES 1}\COVARIANTINDEX{ij}}$
+\end_inset
+
+ has quadratic terms in 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+.
+ Now I have no idea what we use, but we obtain 
+\begin_inset Formula 
+\[
+T^{\text{GW}}\COVARIANTINDEX{ij}=\frac{c^{4}}{32\pi G}\ANGLEBRACKETS{\frac{\partial h_{TT}\CONTRAVARIANTINDEX{\alpha\beta}}{\partial x\COVARIANTINDEX i}\frac{\partial h_{TT}\COVARIANTINDEX{\alpha\beta}}{\partial x\COVARIANTINDEX j}}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula 
+\begin{align*}
+h_{TT}\COVARIANTINDEX{\alpha\beta} & =h_{TT}\COVARIANTINDEX{\alpha\beta}\PARENTHESES{t-\frac{z}{c}}\\
+ & =h_{+}e_{+}\COVARIANTINDEX{\alpha\beta}+h_{\times}e_{\times}\COVARIANTINDEX{\alpha\beta}
+\end{align*}
+
+\end_inset
+
+ is a wave propagating in the 
+\begin_inset Formula $z$
+\end_inset
+
+ direction and 
+\begin_inset Formula $h_{TT}$
+\end_inset
+
+ I think it means 
+\begin_inset Formula $h_{\text{Transverse-Traceless}}$
+\end_inset
+
+, but not sure.
+ Thus 
+\begin_inset Formula 
+\[
+T^{\text{GW}}\COVARIANTINDEX{00}=\frac{c^{4}}{16\pi G}\ANGLEBRACKETS{\dot{h}_{+}^{2}+\dot{h}_{\times}^{2}}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+-cT\COVARIANTINDEX{03}=-cT\COVARIANTINDEX{30}=c^{2}T\COVARIANTINDEX{33}=T^{\text{GW}}\COVARIANTINDEX{00}
+\]
+
+\end_inset
+
+ and all other components are zero.
+ (We used that 
+\begin_inset Formula $e_{+}\CONTRAVARIANTINDEX{ij}e_{\times}\COVARIANTINDEX{ij}=e_{\times}\CONTRAVARIANTINDEX{ij}e_{+}\COVARIANTINDEX{ij}=2$
+\end_inset
+
+.) This is the 
+\begin_inset Quotes eld
+\end_inset
+
+gravitational wave flux
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+El aula tiene 3 pizarrones de los cuales sólo se pueden ver 2 en simultáneo.
+ Ahora escondió el pizarrón 2 y arrancó en el 3, así que no puedo ver nada
+ de lo que acaba de escribir.
+ We are interested in solving the Einstein field equations for this 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Me limito a una tarea de copista de ahora en adelante, sin interpretación.
+ 
+\begin_inset Formula 
+\[
+h_{ij,j}=0\rightarrow\boxed{\tau\CONTRAVARIANTINDEX{ij}\COVARIANTINDEX{ij}=0}\text{ conservation law for coordinate system}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\square\bar{h}\COVARIANTINDEX{ij}\PARENTHESES{t,\VECTOR x}=\frac{4G}{c^{4}}\intop\frac{\tau_{ik}\PARENTHESES{t-\frac{\MODULE{\VECTOR x-\VECTOR x\PRIME}}{c},\VECTOR x\PRIME}}{\MODULE{\VECTOR x-\VECTOR x\PRIME}}\DIFERENTIAL^{3}x\PRIME
+\]
+
+\end_inset
+
+This is the integral we have to solve.
+ We will solve this in two regimes:
+\end_layout
+
+\begin_layout Itemize
+Far-zone: Means that 
+\begin_inset Formula $R\ll\lambda\ll r$
+\end_inset
+
+ where 
+\begin_inset Formula $R$
+\end_inset
+
+ is the source size and 
+\begin_inset Formula $r$
+\end_inset
+
+ the distance we are looking from.
+\end_layout
+
+\begin_layout Itemize
+Near-zone: Means 
+\begin_inset Formula $R\ll r\ll\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Far zone
+\end_layout
+
+\begin_layout Standard
+We are using 
+\begin_inset Formula $R\lll r$
+\end_inset
+
+ so the distance to the source is always the same: 
+\begin_inset Formula 
+\[
+\MODULE{\VECTOR x-\VECTOR x\PRIME}\approx r
+\]
+
+\end_inset
+
+ We consider also slow motion: 
+\begin_inset Formula 
+\[
+t-\frac{\MODULE{\VECTOR x-\VECTOR x\PRIME}}{c}\sim t-\frac{r}{c}
+\]
+
+\end_inset
+
+ which in some way is a consequence from the previous assumption.
+ In this conditions we have 
+\begin_inset Formula 
+\[
+\bar{h}\COVARIANTINDEX{ij}=\frac{4G}{c^{4}r}\intop\tau\COVARIANTINDEX{ik}\PARENTHESES{t-\frac{r}{c},\VECTOR x\PRIME}\DIFERENTIAL^{3}x\PRIME
+\]
+
+\end_inset
+
+ Now we approximate 
+\begin_inset Formula 
+\[
+\tau\CONTRAVARIANTINDEX{\alpha\beta}\approx\frac{1}{2}\frac{\partial^{2}}{\partial t^{2}}\PARENTHESES{x\CONTRAVARIANTINDEX{\alpha}x\CONTRAVARIANTINDEX{\beta}\tau\CONTRAVARIANTINDEX{00}}
+\]
+
+\end_inset
+
+ find 
+\begin_inset Formula 
+\[
+\bar{h}\COVARIANTINDEX{\alpha\beta}=\frac{2G}{c^{4}r}\frac{\partial^{2}}{\partial t^{2}}\GUNDERBRACE{\intop x\PRIME\CONTRAVARIANTINDEX{\alpha}x\PRIME\CONTRAVARIANTINDEX{\beta}\tau\CONTRAVARIANTINDEX{00}\PARENTHESES{t-\frac{r}{c},\VECTOR x}\DIFERENTIAL^{3}x\PRIME}{\text{quadrupole tensor of GW}}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\bar{h}\CONTRAVARIANTINDEX{\alpha\beta}\sim\frac{2G}{c^{4}r}\ddot{I}\CONTRAVARIANTINDEX{\alpha\beta}\PARENTHESES{t-\frac{r}{c}}
+\]
+
+\end_inset
+
+ Now we project into TT gauge 
+\begin_inset Formula $P\COVARIANTINDEX{\alpha\beta}=\delta\COVARIANTINDEX{\alpha\beta}-\hat{\eta}\COVARIANTINDEX{\alpha}\hat{\eta}\COVARIANTINDEX{\beta}$
+\end_inset
+
+ and finally the solution in the near zone is 
+\begin_inset Formula 
+\[
+\boxed{\bar{h}_{TT}\COVARIANTINDEX{\alpha\beta}\sim\frac{2G}{c^{4}r}\ddot{I}_{TT}\COVARIANTINDEX{\alpha\beta}}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Near zone
+\end_layout
+
+\begin_layout Standard
+In the near zone the gravitational potential to lowest order (Newtonian
+ limit) is 
+\begin_inset Formula 
+\begin{align*}
+\phi & =-\frac{c^{4}}{2}h\CONTRAVARIANTINDEX{00}\\
+ & =-\frac{c^{4}}{4}\PARENTHESES{\bar{h}\CONTRAVARIANTINDEX{00}+\delta\COVARIANTINDEX{\alpha\beta}\frac{\bar{h}\CONTRAVARIANTINDEX{\alpha\beta}}{c^{2}}}
+\end{align*}
+
+\end_inset
+
+Here there was a long discussion, and we ended up with this: 
+\begin_inset Formula 
+\[
+\phi=-G\intop\frac{\tau\CONTRAVARIANTINDEX{00}\PARENTHESES{t,\VECTOR x}+\frac{1}{c^{2}}\delta\COVARIANTINDEX{\alpha\beta}\tau\CONTRAVARIANTINDEX{\alpha\beta}\PARENTHESES{t,\VECTOR x}}{\MODULE{\VECTOR x-\VECTOR x\PRIME}}\DIFERENTIAL^{3}x\PRIME
+\]
+
+\end_inset
+
+ Now we expand the denominator in powers of 
+\begin_inset Formula $\frac{1}{r}$
+\end_inset
+
+ because we are not in the far zone.
+ (I think that 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ run only on the spacial components.)
+\end_layout
+
+\begin_layout Standard
+Better to see this from the book
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Gravitational radiation luminosity
+\end_layout
+
+\begin_layout Standard
+See 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ § 3.3.2.
+\end_layout
+
+\begin_layout Standard
+The gravitational flux is the amount of energy carried by a gravitational
+ wave that crosses a spherical surface element surrounding the source per
+ unit time.
+ It is 
+\begin_inset Formula 
+\begin{align*}
+\frac{\DIFERENTIAL E}{\DIFERENTIAL t\DIFERENTIAL A} & =T^{\text{GW}}\COVARIANTINDEX{03}\\
+ & \vdots
+\end{align*}
+
+\end_inset
+
+As a result we get 
+\begin_inset Formula 
+\[
+L_{\text{GW}}=-\frac{\DIFERENTIAL E}{\DIFERENTIAL t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Emission by an orbiting binary system
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ § 3.5.
+ We want to compute the quadrupolar moment 
+\begin_inset Formula 
+\[
+I\CONTRAVARIANTINDEX{ij}=\intop\DIFERENTIAL^{3}x\PARENTHESES{x\CONTRAVARIANTINDEX ix\CONTRAVARIANTINDEX j-\frac{r^{2}}{3}\delta\CONTRAVARIANTINDEX{ij}}\rho\PARENTHESES{t,\VECTOR x}
+\]
+
+\end_inset
+
+ Now we go to the reduced mass problem 
+\begin_inset Formula 
+\[
+\LBRACE{\begin{aligned} & a=r_{1}+r_{2}\\
+ & M=m_{1}+m_{2}\\
+ & \mu=\frac{m_{1}m_{2}}{M}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ Using this we get the expressions 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ (3.165).
+ This is 
+\begin_inset Formula 
+\[
+\LBRACE{\begin{aligned} & I_{11}=\frac{\mu a^{2}}{2}\PARENTHESES{1+\cos\PARENTHESES{2\varphi}}\\
+ & I\COVARIANTINDEX{22}=\frac{\mu a^{2}}{2}\PARENTHESES{1-\cos\PARENTHESES{2\varphi}}\\
+ & I\COVARIANTINDEX{12}=\frac{\mu a^{2}}{2}\sin\PARENTHESES{2\varphi}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ Now we want to calculate the perturbation to the metric, this is 
+\begin_inset Formula 
+\[
+h^{TT}\COVARIANTINDEX{ij}\sim\frac{2G}{c^{4}r}\ddot{I}^{TT}\COVARIANTINDEX{ij}\PARENTHESES{t-\frac{r}{c}}
+\]
+
+\end_inset
+
+ Replacing the previous components we obtain 
+\begin_inset Formula 
+\[
+h^{TT}\COVARIANTINDEX{ij}=-\frac{4G\mu a^{2}\omega^{2}}{c^{4}r}\SQBRACKETS{\begin{matrix}\cos2\varphi & \sin2\varphi & 0\\
+\sin2\varphi & -\cos2\varphi & 0\\
+0 & 0 & 0
+\end{matrix}}
+\]
+
+\end_inset
+
+ We have used in the beginning that the observer is in the 
+\begin_inset Formula $\VERSOR z$
+\end_inset
+
+ direction, thus we already have the 
+\begin_inset Formula $h$
+\end_inset
+
+ in the TT gauge.
+ If we use the polarization tensors 
+\begin_inset Formula 
+\[
+\LBRACE{\begin{aligned} & \VECTOR e_{+}=\SQBRACKETS{\begin{matrix}1 & 0 & 0\\
+0 & -1 & 0\\
+0 & 0 & 0
+\end{matrix}}\\
+ & \VECTOR e_{\times}=\SQBRACKETS{\begin{matrix}0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 0 & 0
+\end{matrix}}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+then each component has amplitude 
+\begin_inset Formula 
+\[
+\LBRACE{\begin{aligned} & h_{+}=-\frac{4G\mu a^{2}\omega^{2}}{c^{4}r}\cos2\varphi\\
+ & h_{\times}=-\frac{4G\mu a^{2}\omega^{2}}{c^{4}r}\sin2\varphi
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Here we note that the frequency of the gravitational wave is twice the frequency
+ of the orbital motion: 
+\begin_inset Formula 
+\[
+f_{\text{gravitational wave}}=2f_{\text{orbital motion}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we use 
+\begin_inset Formula 
+\[
+v\DEF a\omega
+\]
+
+\end_inset
+
+ which is basically the velocity of the reduced mass orbiting body, or similar,
+ then we can rewrite 
+\begin_inset Formula 
+\[
+\LBRACE{\begin{aligned} & h_{+}=-\frac{4G\mu}{c^{2}r}\PARENTHESES{\frac{v}{c}}^{2}\cos2\varphi\\
+ & h_{\times}=-\frac{4G\mu}{c^{2}r}\PARENTHESES{\frac{v}{c}}^{2}\sin2\varphi
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+If the observer is not exactly at 
+\begin_inset Formula $\VERSOR z$
+\end_inset
+
+ but at an angle 
+\begin_inset Formula $\iota$
+\end_inset
+
+ (iota) the amplitudes are modified according to 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ eq.
+ (3.172).
+ 
+\end_layout
+
+\begin_layout Standard
+Now we want to see how this system evolves in time.
+ Basically the gravitational radiation will carry energy, this will make
+ the orbits to reduce, frequency increase and so on.
+ To study this we need the gravitational wave luminosity, and for this we
+ compute the third time derivative of the quadrupole tensor.
+ The result is 
+\begin_inset Formula 
+\begin{align*}
+L_{\text{gravitational wave}} & =\frac{1}{5}\frac{G}{c^{5}}\ANGLEBRACKETS{\PARENTHESES{\ddddot{I}\COVARIANTINDEX{11}}^{2}+\PARENTHESES{\dddot{I}\COVARIANTINDEX{22}}^{2}+2\PARENTHESES{\dddot{I}\COVARIANTINDEX{12}}^{2}}\\
+ & =\frac{32}{5}\frac{c^{5}}{G}\eta^{2}\PARENTHESES{\frac{v}{c}}^{10}
+\end{align*}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\eta\DEF\frac{m_{1}m_{2}}{M^{2}}$
+\end_inset
+
+.
+ Now we can compute the energy using 
+\begin_inset Formula 
+\[
+L_{\text{GW}}=-\frac{\DIFERENTIAL E}{\DIFERENTIAL t}
+\]
+
+\end_inset
+
+ and we use the Newtonian approximation for the energy 
+\begin_inset Formula 
+\begin{align*}
+E & =\frac{m_{2}}{2}v_{1}^{2}+\frac{m_{2}}{2}v_{2}^{2}-\frac{Gm_{1}m_{2}}{a}\\
+ & \,\vdots\\
+ & =-\frac{\mu}{2}v^{2}
+\end{align*}
+
+\end_inset
+
+ Combining these two expressions we get 
+\begin_inset Formula 
+\[
+\frac{\DIFERENTIAL\PARENTHESES{\frac{v}{c}}}{\DIFERENTIAL t}=\frac{32\eta}{5}\frac{c^{3}}{GM}\PARENTHESES{\frac{v}{c}}^{9}
+\]
+
+\end_inset
+
+ Because we are using the Newtonian approximation, this is an approximation...
+ But in the early moments of the merge we can use this formulas, i.e.
+ when the two masses are enough far away from each other.
+ 
+\end_layout
+
+\begin_layout Standard
+We can use this result to calculate the 
+\emph on
+time until coalescence
+\emph default
+.
+ See in the book 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ for details.
+ Don't know how accurate this is because the coalescence happens when the
+ Newtonian approximation is not valid anymore.
+ But this may happen for a short time.
+\end_layout
+
+\begin_layout Standard
+We can also calculate the phase evolution.
+ Because the gravitational wave is not monochromatic (because of the decay
+ of the orbital motion) the phase will not be exactly a linear function
+ increasing with time.
+ The details of the calculation can be seen in the book.
+ Basically with this we obtain 
+\begin_inset Formula $\varphi=\varphi\PARENTHESES v$
+\end_inset
+
+ and in the end 
+\begin_inset Formula $\cos2\varphi\to\cos2\varphi\PARENTHESES v$
+\end_inset
+
+.
+ Again, this is Newtonian so it is an approximation.
+ In the post-Newtonian case the function 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ are replaced by more complicated post-Newtonian expressions and the calculation
+s are done numerically.
+ 
+\end_layout
+
+\begin_layout Standard
+The post-Newtonian approximations, which are gradually getting better as
+ the number of terms is increased, are used as ansatz.
+ The merge of the two bodies is only modeled by full GR, and to get the
+ wave forms for this you have to numerically solve full GR.
+ But this is very expensive computationally, so you use post-Newtonian approxima
+tions which are very cheap as ansatz and then you solve the full GR.
+ 
+\end_layout
+
+\begin_layout Section*
+28.10.2021
+\end_layout
+
+\begin_layout Section
+Gravitational wave observation and inference
+\end_layout
+
+\begin_layout Standard
+What we are discussing today is in hand-written notes, not specifically
+ taken from anywhere.
+ If it helps, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ chapter 7 has some stuff on this topics.
+ I don't know how much it is related to this.
+\end_layout
+
+\begin_layout Subsection
+Classification of data analyses
+\end_layout
+
+\begin_layout Standard
+We can calssify like this:
+\end_layout
+
+\begin_layout Itemize
+Utility based
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The following analyses types are in some way sequential, in the sense that
+ if you fail in answering 
+\begin_inset Quotes eld
+\end_inset
+
+is there a GW here?
+\begin_inset Quotes erd
+\end_inset
+
+ then all the other analyses cannot be performed, and so on.
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Detection of the gravitational waves within some data.
+ Basically you want to say 
+\begin_inset Quotes eld
+\end_inset
+
+yes, there is a GW
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+no, there is not
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Source classification and/or parameter estimation.
+ Once you have found a GW, you want to characterize the source.
+\end_layout
+
+\begin_layout Enumerate
+Others:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Test the underlying theory (GR).
+\end_layout
+
+\begin_layout Itemize
+Test astrophysical formation channels.
+ We use the parameters we have estimated before in conjunction with a population
+ of events, to test how were these objects formed.
+ Basically you can test the 
+\begin_inset Quotes eld
+\end_inset
+
+cross section
+\begin_inset Quotes erd
+\end_inset
+
+ of each type of source based on the rate you observe.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Source based classification.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Transients: You catch a 
+\begin_inset Quotes eld
+\end_inset
+
+short
+\begin_inset Quotes erd
+\end_inset
+
+ transient while your detector is on for a long time.
+ So 
+\begin_inset Formula $t_{\text{signal}}<t_{\text{observation}}$
+\end_inset
+
+.
+ Usually we have 
+\begin_inset Formula 
+\[
+\LBRACE{\begin{aligned} & t_{\text{observation}}\sim100\text{ to }200\text{ days}\\
+ & t_{\text{signal}}\sim1\MILI s\text{ to few days}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ What we consider 
+\begin_inset Formula $t_{\text{signal}}$
+\end_inset
+
+ is, of course, the time the signal is above the noise floor.
+ The sources that produce these signals are CBC, binaries (BH-BH, NS-NS,
+ BH-NS).
+ Other sources are core collapse, SN, NS glitches, cosmic strings.
+\end_layout
+
+\begin_layout Itemize
+Persistent: This is when 
+\begin_inset Formula $t_{\text{signal}}>t_{\text{observation}}$
+\end_inset
+
+.
+ Here we can have two types of signals:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Continuous wave.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Rotating NS.
+ When NS rotate they loose the spherical symmetry, and this can excite a
+ number of modes that emit GW.
+ The frequency of the GW is twice the frequency of rotation of the NS.
+ 
+\end_layout
+
+\begin_layout Itemize
+X-ray binaries.
+\end_layout
+
+\begin_layout Itemize
+Also NS-NS binaries in an early state.
+ (Also BH-BH and BH-NS, but NS-NS binaries are known better from the electromagn
+etic spectrum so they are more studied.)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Stochastic background.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Astrophysical background.
+ When you have many many events happening simultaneously, you see the signals
+ all mixed.
+ As you look farther in space, the crust of volume at a distance 
+\begin_inset Formula $R$
+\end_inset
+
+ becomes bigger and bigger and so it contains more and more events with
+ decreasing amplitude (because they are further away) but so they mix.
+ So here you have an ensemble of transient sources.
+\end_layout
+
+\begin_layout Itemize
+Cosmological background.
+ This is the analogous signal to the CMB, they are primordial GW.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Methodology based.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Un-modeled methods.
+ Rely on the understanding of the detectors.
+ You take the data and you know your detector, so you try to see if there
+ is any kind of signal, without worrying too much about which source produced
+ it.
+ The optimal way of doing this is to try to correlate the same signal in
+ different detectors.
+\end_layout
+
+\begin_layout Itemize
+Modeled methods.
+ Rely on the understanding of the source, and you try to find such signal
+ in your data.
+ The best way of doing this is to do model-matching to the signals.
+ You can also use machine learning.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Overhead concept
+\end_layout
+
+\begin_layout Standard
+Let's recap the response of a GW signal in an interferometer.
+ A source at position 
+\begin_inset Formula $\theta\phi$
+\end_inset
+
+ in the sky, and a distance 
+\begin_inset Formula $R$
+\end_inset
+
+ is producing the GW with components 
+\begin_inset Formula $h_{+}\PARENTHESES t$
+\end_inset
+
+ and 
+\begin_inset Formula $h_{\times}\PARENTHESES t$
+\end_inset
+
+.
+ So if we have many detectors and we index them with 
+\begin_inset Formula $k$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\EVALUATEDAT{\frac{\Delta L}{L}}k{}=F_{+}\PARENTHESES{\theta,\phi,\psi}h_{+}\PARENTHESES t+F_{\times}\PARENTHESES{\theta,\phi,\psi}h_{\times}\PARENTHESES t
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\psi$
+\end_inset
+
+ I don't know what it is, and the functions 
+\begin_inset Formula $F$
+\end_inset
+
+ in principle depend on time because Earth is rotating, but if we look at
+ short signals (a few seconds) we can neglect this dependence.
+ This may be explained in more detail in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ § 6.1.10.
+ The response of the detector can be modeled as 
+\begin_inset Formula 
+\[
+\LBRACE{\begin{aligned} & F_{+}=?\\
+ & F_{\times}=\frac{1}{2}\PARENTHESES{1+\cos^{2}\theta}\cos^{2}\phi\sin2\psi+\cos\theta\sin2\phi\cos2\psi
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ Now we define the 
+\begin_inset Formula $\SNR$
+\end_inset
+
+ squared: 
+\begin_inset Formula 
+\begin{align*}
+\rho^{2} & \equiv\SNR^{2}\\
+ & =4\intop_{0}^{\infty}\frac{\MODULE{\frac{\Delta L}{L}\PARENTHESES f}}{S_{h}\PARENTHESES f}\DIFERENTIAL f
+\end{align*}
+
+\end_inset
+
+ where 
+\begin_inset Formula $f$
+\end_inset
+
+ is the frequency, 
+\begin_inset Formula $\frac{\Delta L}{L}\PARENTHESES f$
+\end_inset
+
+ is the Fourier transform of 
+\begin_inset Formula $\frac{\Delta L}{L}\PARENTHESES t$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{h}\PARENTHESES f$
+\end_inset
+
+ is the power spectral density.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Network of detectors 
+\end_layout
+
+\begin_layout Standard
+If we have a network of detectors, the effective 
+\begin_inset Formula $\SNR$
+\end_inset
+
+ is improved ass 
+\begin_inset Formula 
+\[
+\SNR_{\text{effective}}^{2}=\sum_{k\in\text{Detectors}}\SNR_{k}^{2}
+\]
+
+\end_inset
+
+ where we are assuming that the detectors are independent in all sense except
+ for the signal.
+ 
+\end_layout
+
+\begin_layout Standard
+The antenna pattern power is combined like this 
+\begin_inset Formula 
+\[
+p\PARENTHESES{\theta,\phi}=\sum_{k\in\text{Detectors}}F_{+,k}^{2}+F_{\times,k}^{2}
+\]
+
+\end_inset
+
+ where we can define 
+\begin_inset Formula 
+\[
+p_{k}\PARENTHESES{\theta,\phi}\equiv F_{+,k}^{2}+F_{\times,k}^{2}
+\]
+
+\end_inset
+
+ As you add detectors to the network, 
+\begin_inset Formula $p$
+\end_inset
+
+ gets more uniform.
+ 
+\end_layout
+
+\begin_layout Standard
+In real life the angle between the two arms of an interferometer are not
+ exactly 
+\begin_inset Formula $90\UNIT{deg}$
+\end_inset
+
+ because of technological constraints, geography, etc.
+ So if this angle is 
+\begin_inset Formula $\eta$
+\end_inset
+
+ then we will have 
+\begin_inset Formula 
+\[
+\LBRACE{\begin{aligned} & F_{+}=\sin\eta\SQBRACKETS{a\cos^{2}\psi+b\sin^{2}\psi}\\
+ & F_{\times}=\sin\eta\SQBRACKETS{a\cos^{2}\psi-b\sin^{2}\psi}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ have complicated expressions, see the notes of the professor.
+ The coordinates are 
+\begin_inset Formula $\beta,\lambda$
+\end_inset
+
+ the longitude and latitude of the detector, 
+\begin_inset Formula $\theta\phi$
+\end_inset
+
+ the position of the source of GW.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Coincident and coherent formalism
+\end_layout
+
+\begin_layout Standard
+We have a set of signals 
+\begin_inset Formula $h\PARENTHESES t$
+\end_inset
+
+ coming from each detector in the network, e.g.
+ 
+\begin_inset Formula $h^{L}\PARENTHESES t$
+\end_inset
+
+ and 
+\begin_inset Formula $h^{H}\PARENTHESES t$
+\end_inset
+
+ from Ligo, 
+\begin_inset Formula $h^{V}\PARENTHESES t$
+\end_inset
+
+ from Virgo, and so on.
+ How do we combine all these signals to see if there is something going
+ on? We can use 
+\end_layout
+
+\begin_layout Enumerate
+Coincident formalism.
+ Basically you look for time coincidences in each 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ We know GW go at the speed of light, we know the distance between each
+ detector, we can compute a set of time windows withing the signals should
+ be correlated if the are from the same event.
+ Then we can look for such signals in all possible time windows in each
+ 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ If we find something with a 
+\begin_inset Formula 
+\[
+\SNR=\sqrt{\sum_{k}\SNR_{k}^{2}}
+\]
+
+\end_inset
+
+ bigger than some value, we claim we have an event.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Coherent formalism.
+ Here we not only use time coincidence but also two other things: The sky
+ direction and the polarization.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Transient detection
+\end_layout
+
+\begin_layout Standard
+How do we know that we have seen a GW transient? There are glitches that
+ are of course not GW events but they look like GW events.
+ To estimate the occurrence of these glitches (e.g.
+ earthquakes, a car crash, etc) what you do is to shift your data from each
+ detector with an exagerated 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ such that the correlation between GW events is broken, and then you run
+ your analyses algorithms.
+ In this way you can estimate how often do glitches that look like GW happen
+ in your array of detectors.
+ 
+\end_layout
+
+\begin_layout Standard
+So suppose we have two 
+\begin_inset Formula $h$
+\end_inset
+
+ signals from two detectors.
+ We run our analysis algorithm and we find an event with some 
+\begin_inset Formula $\SNR_{\text{candidate event}}$
+\end_inset
+
+.
+ What is the chance that this was a random glitch and what is the chance
+ it is an actual GW.
+ What we do to measure the chance a totally random glitch will produce such
+ an event is to shift one of the 
+\begin_inset Formula $h$
+\end_inset
+
+ in, say, 
+\begin_inset Formula $2$
+\end_inset
+
+ minutes (enough to break correlation of GW events) and then run the analysis
+ algorithm.
+ Then we repeat this for 
+\begin_inset Formula $3$
+\end_inset
+
+ minutes, and for 
+\begin_inset Formula $4$
+\end_inset
+
+ minutes, and so on.
+ In this way we produce many thousands of years of backgrand based in real
+ data which we are completely sure it has no GW events, so here each event
+ we detect with the same 
+\begin_inset Formula $\SNR$
+\end_inset
+
+ is a fake event.
+ With this we know how often our candidate event can be produced by a random
+ glitch, say we obtain 
+\begin_inset Formula $10$
+\end_inset
+
+ glitches in 
+\begin_inset Formula $100000$
+\end_inset
+
+ years of background, then we would expect to see our 
+\begin_inset Formula $\SNR_{\text{candidate event}}$
+\end_inset
+
+ once every 10000 years due to random glitches.
+ With this we can compute the significance of the event for each value of
+ 
+\begin_inset Formula $\SNR$
+\end_inset
+
+.
+ The lower the 
+\begin_inset Formula $\SNR$
+\end_inset
+
+ the lower the significance.
+ With this we can define the 
+\begin_inset Quotes eld
+\end_inset
+
+false alarm probability
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\text{FAP}=1-\exp\PARENTHESES{-\frac{t_{\text{observation}}}{i\text{FAR}?}}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section*
+04.11.2021
+\end_layout
+
+\begin_layout Standard
+Unfortunately today I was not able to assist to the lecture.
+\end_layout
+
+\begin_layout Section*
+11.11.2021
+\end_layout
+
+\begin_layout Subsection*
+Recap from the lecture I missed
+\end_layout
+
+\begin_layout Itemize
+Transient detection:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Unmodeled search (geometric formalism).
+\end_layout
+
+\begin_layout Itemize
+Modeled search.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Modeled methods
+\end_layout
+
+\begin_layout Standard
+For this you need a signal that you can fit with a model.
+ Thus, such signal must be somehow 
+\begin_inset Quotes eld
+\end_inset
+
+happening all the time
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To perform a modeled search we need:
+\end_layout
+
+\begin_layout Enumerate
+Template bank.
+\end_layout
+
+\begin_layout Enumerate
+Likelihood (SNR).
+\end_layout
+
+\begin_layout Enumerate
+Consistency checking (detection statistics).
+\end_layout
+
+\begin_layout Subsubsection*
+Template bank
+\end_layout
+
+\begin_layout Standard
+A bank of waveform models.
+ These models should cover all the parameter space you want to explore (mass,
+ spin, etc).
+ You also need to know the power spectral density of your detector (to know
+ how probable is that what you have fitted is a signal or just noise).
+ The parameters space is discretized to produce the template bank, otherwise
+ it would be infinite.
+ 
+\end_layout
+
+\begin_layout Itemize
+Parameter space.
+ If we are looking for signals produced by binaries, our parameters space
+ is composed by the two masses 
+\begin_inset Formula $m_{1},m_{2}$
+\end_inset
+
+, the 3 spin components of each mass 
+\begin_inset Formula $\VECTOR s_{1},\VECTOR s_{2}$
+\end_inset
+
+, the eccentricity of the orbit which is one number.
+ There can be other parameters depending on the model.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The majority of the mergers happen with 
+\begin_inset Quotes eld
+\end_inset
+
+parallel spins
+\begin_inset Quotes erd
+\end_inset
+
+, this means that 
+\begin_inset Formula $\VECTOR s_{1}\parallel\VECTOR s_{2}\parallel\VECTOR L_{\text{Orbital}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Eccentricity is usually 0.
+\end_layout
+
+\begin_layout Itemize
+The mass can be 
+\begin_inset Quotes eld
+\end_inset
+
+anything
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Usually we consider one of them to be 
+\begin_inset Formula $m_{\text{high}}$
+\end_inset
+
+ and the other one to be 
+\begin_inset Formula $m_{\text{low}}$
+\end_inset
+
+.
+ Typical values for 
+\begin_inset Formula $m_{\text{high}}\sim100M_{\sun}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{\text{low}}\sim1M_{\sun}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+We have to define how we will discretize the parameters space.
+ Suppose we have two values of the parameters 
+\begin_inset Formula $\theta_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta_{2}$
+\end_inset
+
+ (where 
+\begin_inset Formula $\theta=\BRACES{m_{1},m_{2},\VECTOR s_{1},\VECTOR s_{2},\dots}$
+\end_inset
+
+).
+ With these parameters we produce two waveforms 
+\begin_inset Formula $h\PARENTHESES{\theta_{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $h\PARENTHESES{\theta_{2}}$
+\end_inset
+
+.
+ We need a way of measuring the distance from 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ to 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+ in order to know how to properly discretize the parameters space.
+ There are many fancy ways of doing this, here we will define the 
+\begin_inset Quotes eld
+\end_inset
+
+match
+\begin_inset Quotes erd
+\end_inset
+
+ which is 
+\begin_inset Formula 
+\begin{align*}
+\mu & =\PARENTHESES{\frac{h\PARENTHESES{\theta_{1}}}{\MODULE{\MODULE{h\PARENTHESES{\theta_{1}}}}}|\frac{h\PARENTHESES{\theta_{2}}}{\MODULE{\MODULE{h\PARENTHESES{\theta_{2}}}}}}\\
+ & =4\REALPART{\intop_{f_{\text{low}}}^{f_{\text{high}}}\frac{\tilde{h}\PARENTHESES{\theta_{1}}\tilde{h}\PARENTHESES{\theta_{2}}}{\tilde{S}_{n}\PARENTHESES f}\DIFERENTIAL f}
+\end{align*}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\tilde{S}_{n}\PARENTHESES f$
+\end_inset
+
+ is the PSD and 
+\begin_inset Formula $\tilde{h}$
+\end_inset
+
+ are probably the Fourier transforms.
+ This quantity is measuring how much SNR you looks if you use 
+\begin_inset Formula $\theta_{2}$
+\end_inset
+
+ instead of 
+\begin_inset Formula $\theta_{1}$
+\end_inset
+
+.
+ For example 
+\begin_inset Formula $\mu=0.9$
+\end_inset
+
+ tells that you loose 
+\begin_inset Formula $10\UNIT{\%}$
+\end_inset
+
+ of SNR.
+\end_layout
+
+\begin_layout Standard
+I think this is explained in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ § 7.2.2, or nearby.
+\end_layout
+
+\begin_layout Subsubsection*
+Likelihood (SNR)
+\end_layout
+
+\begin_layout Standard
+Look at 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ § 7.2.
+\end_layout
+
+\begin_layout Standard
+Our data 
+\begin_inset Formula $d$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+d\PARENTHESES t=n\PARENTHESES t+s\PARENTHESES t
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $n$
+\end_inset
+
+ is noise and 
+\begin_inset Formula $s$
+\end_inset
+
+ is signal.
+ We assume that 
+\begin_inset Formula $n$
+\end_inset
+
+ is Gaussian with mean 0.
+\end_layout
+
+\begin_layout Subsubsection*
+Consistency test
+\end_layout
+
+\begin_layout Standard
+See 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reference: Jolien Gravitational Wave Physics and Astronomy BOOK"
+literal "false"
+
+\end_inset
+
+ § 7.8.1.4.
+ 
+\end_layout
+
+\begin_layout Section*
+18.11.2021
+\end_layout
+
+\begin_layout Standard
+I could not attend this lecture, there is a video 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://uzh.zoom.us/rec/share/ZbGfonADZORTd0lpTZZRjfZh1ZbU57f_TsM0qo7_196cRvB-4vfz
+icYU53NvCn6m._W6fY85VrZG1gSql
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+25.11.2021
+\end_layout
+
+\begin_layout Standard
+When we use get_td_waveform and functions, we have to be careful that 
+\begin_inset Formula 
+\[
+\LBRACE{\begin{aligned} & \frac{\text{mass 1}}{\text{mass 2}}<20\\
+ & \frac{\text{mass 2}}{\text{mass 1}}<20
+\end{aligned}
+}
+\]
+
+\end_inset
+
+ because otherwise it is not valid anymore.
+\end_layout
+
+\begin_layout Section*
+02.12.2021
+\end_layout
+
+\begin_layout Section
+Source modeling 2
+\end_layout
+
+\begin_layout Standard
+Today we are going to finish some stuff that was pending from before.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmltag{tag_name=image}{src=media/3.svg}{style=max-width: 100
+\backslash
+%;}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gravitational wave
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Each stage is calculated in a different way, the most complicated is the
+ plunge and merger stages where numerical relativity has to be used.
+ 
+\end_layout
+
+\begin_layout Subsection
+Numerical relativity
+\end_layout
+
+\begin_layout Standard
+In 1952 it was probed that the EFE in vacuum are well posed, i.e.
+ that there is solution and that small changes in initial conditions produce
+ small changes in solutions so this is stable and continuous.
+ 
+\end_layout
+
+\begin_layout Standard
+The EFE are 10 quasi-linear wave-like equations with hyperbolic stability
+ properties.
+ 
+\end_layout
+
+\begin_layout Standard
+In 1962, 1972 it was introduced the 
+\begin_inset Quotes eld
+\end_inset
+
+ADM formalism
+\begin_inset Quotes erd
+\end_inset
+
+ which looks into the Cauchy problem for PDEs and then formulates the EFE
+ as a computable and iterable process in time steps that go from the initial
+ state to the final state.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+ADM formalism
+\end_layout
+
+\begin_layout Standard
+3+1 decompositions (3-dim space like slices with fixed coordinate times.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmltag{tag_name=image}{src=https://www.frontiersin.org/files/Articles/536296/fspa
+s-07-00058-HTML/image_m/fspas-07-00058-g001.jpg}{style=max-width: 100
+\backslash
+%;}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ADM formalism.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 4 dimensions the interval is, as we know, 
+\begin_inset Formula $\DIFERENTIAL s^{2}=g\COVARIANTINDEX{\mu\nu}\DIFERENTIAL x\CONTRAVARIANTINDEX{\mu}\DIFERENTIAL x\CONTRAVARIANTINDEX{\nu}$
+\end_inset
+
+.
+ In 3+1 formalism this is written as 
+\begin_inset Formula 
+\[
+\DIFERENTIAL s^{2}=-\alpha^{2}\DIFERENTIAL t^{2}+\gamma\COVARIANTINDEX{ij}\PARENTHESES{\DIFERENTIAL x\CONTRAVARIANTINDEX i+\beta\CONTRAVARIANTINDEX i\DIFERENTIAL t}\PARENTHESES{\DIFERENTIAL x\CONTRAVARIANTINDEX j+\beta\CONTRAVARIANTINDEX i\DIFERENTIAL t}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\gamma\CONTRAVARIANTINDEX{ij}$
+\end_inset
+
+ are 3 dimensions metrics and 
+\begin_inset Formula $\alpha,\beta\COVARIANTINDEX i$
+\end_inset
+
+ are gauge variables.
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is called the 
+\begin_inset Quotes eld
+\end_inset
+
+lapse
+\begin_inset Quotes erd
+\end_inset
+
+ and measures the rate in proper time progression between two slices of
+ spacetime while 
+\begin_inset Formula $\beta\COVARIANTINDEX i$
+\end_inset
+
+ is sthe shift vector and measures the change of spacial coordinates between
+ different slices.
+ See the previous figure.
+ The lapse 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ has to be chosen in order to avoid singularities, improve convergence and
+ speed up the simulation.
+\end_layout
+
+\begin_layout Standard
+There is also an 
+\begin_inset Quotes eld
+\end_inset
+
+extrinsic curvature tensor
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $K\COVARIANTINDEX{ij}$
+\end_inset
+
+ that separates the intrinsic curvature of 
+\begin_inset Formula $\gamma\COVARIANTINDEX{ij}$
+\end_inset
+
+ from the extrinsic one.
+ 
+\end_layout
+
+\begin_layout Standard
+In the EFE we have 6 evolution equations + 4 constraint equations.
+ In the ADM formalism look 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://en.wikipedia.org/wiki/ADM_formalism"
+literal "false"
+
+\end_inset
+
+, there are 3 equations of motion for 
+\begin_inset Formula $\gamma\COVARIANTINDEX{ij}$
+\end_inset
+
+ and 3 for 
+\begin_inset Formula $K\COVARIANTINDEX{ij}$
+\end_inset
+
+ which come from the 6 evolution equations in EFE, and the 4 constraint
+ equations are applied to 
+\begin_inset Formula $\gamma\COVARIANTINDEX{ij}$
+\end_inset
+
+ and 
+\begin_inset Formula $K\COVARIANTINDEX{ij}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+With this formalism there are two types of equations:
+\end_layout
+
+\begin_layout Enumerate
+Hyperbolic, i.e.
+ wave-like equations.
+ These are nice because they have a rapid convergence.
+\end_layout
+
+\begin_layout Enumerate
+Parabolic, i.e.
+ time-dependent.
+ 
+\end_layout
+
+\begin_layout Standard
+These problems are mathematically stable once initial constraints are satisfied.
+ However in full GR there is a lot of non-linearity and the small numerical
+ computational errors can blow up.
+ This blow up due to the non-linearity is the challenge of numerical relativity.
+ For this we have to keep the constraints satisfied at all times and this
+ guaranties that stable and convergent solutions exist.
+ 
+\end_layout
+
+\begin_layout Subsection
+Suitable initial conditions
+\end_layout
+
+\begin_layout Subsubsection
+BSSNOK approach
+\end_layout
+
+\begin_layout Standard
+There is one problem which is to propose suitable initial conditions.
+ This was solved during the 1990s by Baugmarde, Shapiro (1998) and Shibala,
+ Nakamura (1995) in the so called BSSNOK approach.
+ The problem is that we have 12 real numbers that are the initial data for
+ 
+\begin_inset Formula $\gamma\COVARIANTINDEX{ij}$
+\end_inset
+
+ and 
+\begin_inset Formula $K\COVARIANTINDEX{ij}$
+\end_inset
+
+.
+ These numbers are not all independent, they are related to the parameters
+ of the system, e.g.
+ the mass and spin of the black holes, and the initial orbit dynamics.
+ We want to know how are they related so we can solve the problem.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Generalized harmonic coordinates with constraint damping (GHCD)
+\end_layout
+
+\begin_layout Standard
+This is a different approach.
+ Not understanding too much.
+ There are two unstable scalar field profiles: initial amplitudes, boosts,
+ separaitons.
+ These are chosen such that approximates two black holes in orbit.
+ 
+\end_layout
+
+\begin_layout Subsection
+Handling of physical singularities of black holes
+\end_layout
+
+\begin_layout Standard
+There is another problem.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Excision
+\end_layout
+
+\begin_layout Standard
+This is one way of solving the singularities problem.
+ We have different types of black holes, Schwarzschild and Kerr.
+ Both have event horizons that shield the singularities.
+ What we do is to simulate outside the event horizon if I understood correctly.
+ (Unruh 1984)
+\end_layout
+
+\begin_layout Standard
+There are challenging boundary conditions due to irregular shape of black
+ hole horizons.
+ This creates numerical artifacts and in particular emission of gravitational
+ waves that is unphysical.
+ To mitigate this problem you have to fine tune the constraints.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Punctures
+\end_layout
+
+\begin_layout Standard
+This is another way of solving the singularities problem.
+ This solution was introduced by Hahn, Lindquist in 1964 axisymmetric coalescenc
+e of two black holes.
+ Here you somehow design your space time such that the solution avoids the
+ singularities using wormholes, or something similar.
+ 
+\end_layout
+
+\begin_layout Standard
+This technique lead to the first successful simulation of two black holes,
+ not until 2005.
+ Some modifications to the original punctures approach were done, for example
+ letting the punctures to freely move in the coordinates system.
+ 
+\end_layout
+
+\begin_layout Subsection
+Discretization and gridding
+\end_layout
+
+\begin_layout Standard
+This is another problem.
+ In the initial problem, probably after a Newtonian ansatz, there are two
+ BH well separated in a flat spacetime.
+ Then you evolve the simulation and you go into coalescence where the two
+ black holes are close and the space time is highly curved.
+ The two situations have very different length scales so the numerical mesh
+ that we take in each case has to be very different.
+ We need an 
+\begin_inset Quotes eld
+\end_inset
+
+adaptive mesh refinement
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In this field not much progress was done.
+\end_layout
+
+\begin_layout Subsection
+Integration procedure
+\end_layout
+
+\begin_layout Standard
+This is another problem.
+ There are different options
+\end_layout
+
+\begin_layout Itemize
+Finite difference methods (FD) which approximate the solution of the PDEs
+ at specific points in the mesh.
+\end_layout
+
+\begin_layout Itemize
+Spectral interpolation methods (SpEC).
+ Fit smooth functions to several points in the mesh.
+ This produces accurate solutions at any location in the mesh.
+ 
+\end_layout
+
+\begin_layout Subsection
+Gravitational wave extraction
+\end_layout
+
+\begin_layout Standard
+Another problem.
+ I don't know what do we want to do now.
+ They use the Newman-Penrose approach.
+ They calculate the Weyl scalar 
+\begin_inset Formula $\psi_{4}$
+\end_inset
+
+ approximation of GW radiation at spatial infinity.
+ 
+\end_layout
+
+\begin_layout Subsection
+Phenomenological IMR modeling in frequency domain
+\end_layout
+
+\begin_layout Standard
+These are very fast because they are analytical, you don't need to solve
+ any equation.
+ It is done in frequency domain because of convenience.
+ They combine analytical approaches from numerical relativity.
+ To go to the frequency domain we use the 
+\begin_inset Quotes eld
+\end_inset
+
+stationary phase approximation
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+09.12.2021
+\end_layout
+
+\begin_layout Section
+Compact binaries
+\end_layout
+
+\begin_layout Standard
+Compact binaries provide a good system to study 
+\end_layout
+
+\begin_layout Itemize
+Astrophysics.
+\end_layout
+
+\begin_layout Itemize
+Test of GR.
+\end_layout
+
+\begin_layout Itemize
+Cosmology.
+\end_layout
+
+\begin_layout Itemize
+Extreme matter.
+\end_layout
+
+\begin_layout Standard
+We will refer to the 
+\begin_inset CommandInset href
+LatexCommand href
+name "main sequence"
+target "https://en.wikipedia.org/wiki/Main_sequence"
+literal "false"
+
+\end_inset
+
+ as the 
+\begin_inset Quotes eld
+\end_inset
+
+ZAMS
+\begin_inset Quotes erd
+\end_inset
+
+ which comes from 
+\begin_inset Quotes eld
+\end_inset
+
+zero age main sequence
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmltag{tag_name=image}{src=https://upload.wikimedia.org/wikipedia/commons/thumb/6
+/6b/HRDiagram.png/465px-HRDiagram.png}{style=max-height: 90vh;}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ZAMS.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+16.12.2021
+\end_layout
+
+\begin_layout Section
+Tests of GR
+\end_layout
+
+\begin_layout Standard
+I arrived some minutes late today.
+\end_layout
+
+\begin_layout Subsection
+Strong-field tests of GR
+\end_layout
+
+\begin_layout Standard
+Here we have binary pulsars.
+ In 1974 it was found the first binary pulsar 
+\begin_inset CommandInset href
+LatexCommand href
+name "PSR B1913+16"
+target "https://en.wikipedia.org/wiki/Hulse%E2%80%93Taylor_binary"
+literal "false"
+
+\end_inset
+
+.
+ Because these are very dense objects, the system emits gravitational waves.
+ This loss of energy reduces the orbital period, and this was measured to
+ be in agreement with GR.
+ This system is in a very early stage of the merge.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmltag{tag_name=image}{src=https://upload.wikimedia.org/wikipedia/commons/thumb/0
+/04/PSR_B1913
+\backslash
+%2B16_period_shift_graph.svg/800px-PSR_B1913
+\backslash
+%2B16_period_shift_graph.svg.png}{style=max-height: 90vh;}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Orbital decay of PSR B1913+16.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 2003 a 
+\begin_inset CommandInset href
+LatexCommand href
+name "double pulsar system"
+target "https://en.wikipedia.org/wiki/PSR_J0737%E2%88%923039"
+literal "false"
+
+\end_inset
+
+ was discovered.
+ This also provides a good test for GR and up to now is in agreement.
+ 
+\end_layout
+
+\begin_layout Subsection
+Tests of GR with compact binary coalescence
+\end_layout
+
+\begin_layout Standard
+We can use the gravitational wave events from LIGO and company to test GR.
+\end_layout
+
+\begin_layout Itemize
+We can perform a 
+\begin_inset Quotes eld
+\end_inset
+
+residuals test
+\begin_inset Quotes erd
+\end_inset
+
+ which is basically to look at 
+\begin_inset Formula $\text{data}-\text{model}$
+\end_inset
+
+.
+ If the model is good, you will only see noise here, if there is something
+ wrong in your model, you will see not just noise but a component of the
+ signal that is not in the model.
+ 
+\end_layout
+
+\begin_layout Itemize
+We can also do a 
+\begin_inset Quotes eld
+\end_inset
+
+least-damped QNM
+\begin_inset Quotes erd
+\end_inset
+
+ which looks if the data is consistent with GR prediction of QNMs (quasi
+ normal modes) of the remnant black hole.
+ For this there is a signal model for 
+\begin_inset Formula $t>t_{0}$
+\end_inset
+
+ where 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ is the time at which the QNM start, and loos like 
+\begin_inset Formula $h\PARENTHESES t\sim e^{-\frac{t-t_{0}}{\tau}}\cos\PARENTHESES{2\pi f_{0}\PARENTHESES{t-t_{0}}+\phi_{0}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Waveform self-consistengy.
+ There is a prediction for the waveform and it has to be consistent.
+ This means that if we estimate the final mass and spin of the black hole
+ after the merger in two 
+\begin_inset Quotes eld
+\end_inset
+
+independent ways
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+using data from the inspiral stage and
+\end_layout
+
+\begin_layout Enumerate
+using data from the ringdown + merger stage
+\end_layout
+
+\begin_layout Standard
+we want the mass and spin to be the same, independently of which of these
+ regions we use.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Massive graviton? If the graviton is massive, there should be dispersion
+ in the propagation of gravitational waves.
+ Up to now there is on evidence for dispersion and 
+\begin_inset Formula $m_{\text{graviton}}\le1\TIMESTENTOTHE{-22}\UNIT{eV}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Parameterized deviations from GR.
+ This I think it is basically to see if other things that are not exactly
+ GR fit better the data than GR does.
+\end_layout
+
+\end_body
+\end_document
