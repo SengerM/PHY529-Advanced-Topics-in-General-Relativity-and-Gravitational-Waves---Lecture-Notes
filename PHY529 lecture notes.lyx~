@@ -188,6 +188,16 @@ https://www.physik.uzh.ch/en/teaching/PHY529/HS2021.html
 .
 \end_layout
 
+\begin_layout Subsubsection*
+WARNING
+\end_layout
+
+\begin_layout Standard
+These notes look fancy (aesthetically) but the contents may be not the best.
+ Read with care, you are advised.
+ In case of any side effect please contact immediately your main doctor.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
@@ -4607,6 +4617,14 @@ Massive graviton? If the graviton is massive, there should be dispersion
 Parameterized deviations from GR.
  This I think it is basically to see if other things that are not exactly
  GR fit better the data than GR does.
+\end_layout
+
+\begin_layout Itemize
+Difference in the speed of light and gravity.
+ This is done combining data from gravitational wave and electromagnetic
+ observations of the same event, and then we can compare the time of arrival
+ of each.
+ 
 \end_layout
 
 \end_body
